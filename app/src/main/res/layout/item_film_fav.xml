@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/newsCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
 
     <LinearLayout
         android:padding="20dp"
@@ -12,7 +10,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/iv_news_image"
+            android:id="@+id/iv_filmimage"
             android:src="@drawable/ic_launcher_background"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
@@ -24,7 +22,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_news_title"
+                android:id="@+id/tv_filmname"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:text="Country Name"
@@ -32,7 +30,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:id="@+id/tv_news_author"
+                android:id="@+id/tv_filmdirector"
                 android:text="Country Capital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -47,8 +45,7 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/btn_delete"
-                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/btn_favdelete"
                 android:background="@android:color/transparent"
                 android:layout_margin="5dp"
                 android:layout_width="36dp"
@@ -57,5 +54,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>

@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dengan_viewmodel.view.activity.HomeActivity">
+    tools:context=".dengan_viewmodel.view.activity.HomeFilmActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_news"
-        android:layout_width="wrap_content"
+        android:id="@+id/rv_film"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favourite"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>

@@ -3,11 +3,9 @@ package com.coufie.tugasempatchaptertujuhbinardependencyinjection
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import com.coufie.tugasempatchaptertujuhbinardependencyinjection.R
 import com.coufie.tugasempatchaptertujuhbinardependencyinjection.dengan_viewmodel.view.activity.HomeActivity
 import com.coufie.tugasempatchaptertujuhbinardependencyinjection.tanpa_viewmodel.view.HomeDuaActivity
+import com.coufie.tugasempatchaptertujuhbinardependencyinjection.dengan_viewmodel.view.activity.HomeFilmActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         dengan_vm.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
+        }
+
+        tugas_film.setOnClickListener {
+            startActivity(Intent(this, HomeFilmActivity::class.java))
         }
     }
 }

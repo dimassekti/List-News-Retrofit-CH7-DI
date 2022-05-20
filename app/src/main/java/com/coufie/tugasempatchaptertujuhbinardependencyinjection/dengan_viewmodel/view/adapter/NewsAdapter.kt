@@ -35,6 +35,10 @@ class NewsAdapter(private var newsOnClick : (GetAllNewsItem)->Unit) : RecyclerVi
         this.let {
             Glide.with(holder.itemView.context).load(newsData!![position].image).into(holder.itemView.iv_news_image)
         }
+
+        holder.itemView.newsCard.setOnClickListener {
+            newsOnClick(newsData!![position])
+        }
     }
 
     override fun getItemCount(): Int {
